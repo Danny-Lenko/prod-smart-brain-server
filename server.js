@@ -23,7 +23,7 @@ const db = knex({
 db.select("*").from("users").then(console.log);
 
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 app.use(bodyParser.json());
 app.use(cors());
