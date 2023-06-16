@@ -20,7 +20,7 @@ const db = knex({
   },
 });
 
-db.select("*").from("users").then(console.log);
+// db.select("*").from("users").then(console.log);
 
 const app = express();
 const port = process.env.PORT || 8080;
